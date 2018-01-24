@@ -31,7 +31,7 @@ a{
 	transition: all 0.3s ease-in-out;
 }
 section{
-	padding: 60px 0px;
+
 	text-align: center;
 }
 
@@ -405,7 +405,7 @@ section{
 }
 .shruthi-icon{
 	background:transparent url(../images/logo.png) no-repeat;
-    width: 187px;
+    width: 100px;
     height: 68px;
 	display:block;
 	background-size: contain;
@@ -434,25 +434,20 @@ section{
     height: 69px;
 	display:block;
 }
-.shruthi-card .shruthi-card-header{
-	margin-bottom: 45px;
+.shruthi-card {
+    width:350px;
+    position: relative;
+}.shruthi-card-header{
+	/* margin-bottom: 5px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.shruthi-card .shruthi-card-header .card-icon{
-	border-radius: 100%;
-	display: inline-block;
-	height: 120px;
-	width: 120px;
-	line-height: 120px;
-	position: relative;
-}
 .shruthi-card-header img{
 	height:150px;
-	width: 60% !important;
+    width: 60% !important;
+    padding-bottom: 10px;
 }
-
 /*Button*/
 .shruthi-btn{
 	border-color: #51c2b9;
@@ -500,20 +495,22 @@ section{
 .social-icons ul li{
 	display: inline-block;
 	list-style-type: none;
-    border: 2px solid #51c2b9;
     margin-right: 10px;
-    background-color: #51c2b9;
-    color: #fff;
 	font-size: 18px;
     line-height: 32px;
+ 
+   
+}
+.social-icons ul li img {
     width: 36px;
+    background-size: contain;
 }
 .social-icons ul li:last-child{
 	margin-right: 0;
 }
 .social-icons ul li a:hover {
-	color: #51c2b9;
-	background-color: #fff;
+
+
 }
 
 
@@ -536,13 +533,14 @@ section{
 	margin: 0;
 }
 .bgimg1 h1, .bgimg1 p{
-	color: #fff;
+	color: #000;
 	letter-spacing: 2px;
 }
 .bgimg1 p{
 	font-size: 32px;
 	padding-top: 0;
-	padding-bottom: 40px;
+    padding-bottom: 40px;
+    font-weight: bolder;
 }
 .bgimg1 .shruthi-btn{
 	border-color: #fff;
@@ -667,12 +665,12 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #e0dbf7;
+	stroke: #123840;
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #840037;
+	stroke: #de4332;
 	animation-delay: -2s;
 }
 
@@ -682,12 +680,12 @@ svg {
 }
 
 .text-copy:nth-child(4){
-	stroke: #BD0034;
+	stroke: #cebd2f;
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #fff;
+	stroke: #2a36ae;
 	animation-delay: -5s;
 }
 
@@ -702,10 +700,10 @@ svg {
 .testimonial .description{
     padding: 40px 30px;
     margin-bottom: 50px;
-    border-top: 1px solid #333;
-    border-left: 1px solid #333;
-    font-size: 15px;
-    color: #333;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    font-size: 16px;
+    color: #000;
     line-height: 30px;
     text-align: left;
     position: relative;
@@ -726,7 +724,7 @@ svg {
 .testimonial .description:after{
     content: "";
     width: 50%;
-    height: 1px;
+    height: 3px;
     background: #333;
     position: absolute;
     bottom: 0;
@@ -775,7 +773,7 @@ svg {
 }
 
 .serviceBox{
-    padding: 20px 25px;
+    padding: 1px 5px;
     border-radius: 5px;
     overflow: hidden;
     z-index: 1;
@@ -808,7 +806,7 @@ svg {
 .serviceBox:hover:after{ height: 100%; }
 .serviceBox .service-icon{
     color: #79acdf;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     transition: all 0.5s ease 0s;
 }
 .serviceBox .service-icon i{ font-size: 30px; }
@@ -821,7 +819,7 @@ svg {
 }
 .serviceBox .description{
     font-size: 15px;
-    color: #777;
+    color: #000;
     line-height: 25px;
 	transition: all 0.5s ease 0s;
 	text-align: right;
@@ -831,12 +829,18 @@ svg {
 @media only screen and (max-width:990px){
     .serviceBox{ margin-bottom: 30px; }
 }
-
+.service-content h3{
+    padding: 10px;
+	letter-spacing: 2px;
+}
+.service-content h3:after{
+	top: 40px;
+}
 .myprogress-bar{
 	width: 700px;
-	position: relative;
+    position: relative;
+    padding: 10px;
 }
-
 .skillbar {
 	position:relative;
 	display:block;
